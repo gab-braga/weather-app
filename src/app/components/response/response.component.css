@@ -1,3 +1,16 @@
+.container {
+    width: clamp(30rem, 100%, 50rem);
+    border-radius: 2.5rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container .loading {
     display: none;
 }
@@ -23,14 +36,6 @@
     border-top: 10px solid var(--primary);
     border-radius: 5rem;
     animation: rotating 1s infinite;
-}
-
-.container {
-    width: clamp(30rem, 100%, 50rem);
-    border-radius: 2.5rem;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    position: relative;
 }
 
 .container .decoration {
@@ -128,12 +133,13 @@
 }
 
 .container .info {
+    width: 100%;
     background-color: var(--lighter);
     padding: 3rem 4rem;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 2rem;
 }
@@ -162,6 +168,18 @@
 
 .container .info .data .value {
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .container .info {
+        flex: 1;
+    }
 }
 
 @keyframes rotating {

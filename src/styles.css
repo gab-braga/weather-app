@@ -28,3 +28,9 @@ app-search, app-response {
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 640px) {
+    :root {
+        font-size: 8px;
+    }
+}
