@@ -6,11 +6,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Routes, RouterModule } from '@angular/router';
 import { SearchComponent } from './components/search/search.component';
 import { ResponseComponent } from './components/response/response.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: '', redirectTo: 'search', pathMatch: 'full' },
+  { path: 'response', redirectTo: 'search' },
   { path: 'search', component: SearchComponent },
-  { path: 'response', component: ResponseComponent }
+  { path: 'response/:city', component: ResponseComponent }
 ];
 
 @NgModule({
@@ -22,7 +25,10 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

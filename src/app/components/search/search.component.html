@@ -1,17 +1,17 @@
 <div class="container">
-    <div class="search-field">
-        <input type="text" id="search">
-        <button>
-            <img src="/assets/icons/search.svg" alt="">
+    <form [formGroup]="formSearch" class="search-field">
+        <input type="text" formControlName="city" />
+        <button (click)="searchData()">
+            <img src="/assets/icons/search.svg" alt="Search">
         </button>
-    </div>
+    </form>
 
     <div class="options">
-        <a routerLink="/response">Tianguá, CE <img src="/assets/icons/arrow-right.svg"></a>
-        <a routerLink="/response">Tianguá, CE <img src="/assets/icons/arrow-right.svg"></a>
-        <a routerLink="/response">Tianguá, CE <img src="/assets/icons/arrow-right.svg"></a>
-        <a routerLink="/response">Tianguá, CE <img src="/assets/icons/arrow-right.svg"></a>
-        <a routerLink="/response">Tianguá, CE <img src="/assets/icons/arrow-right.svg"></a>
-        <a routerLink="/response">Tianguá, CE <img src="/assets/icons/arrow-right.svg"></a>
+        <a routerLink="/response/Tianguá">Tianguá, BR <img src="/assets/icons/arrow-right.svg"></a>
+        <a routerLink="/response/Sydney">Sydney, AU <img src="/assets/icons/arrow-right.svg"></a>
+        <a routerLink="/response/São%20Francisco">São Francisco, US <img src="/assets/icons/arrow-right.svg"></a>
+        <a routerLink="/response/Barcelona">Barcelona, ES <img src="/assets/icons/arrow-right.svg"></a>
+        <a routerLink="/response/Japão">Japão, JP <img src="/assets/icons/arrow-right.svg"></a>
+        <a routerLink="/response/Paris">Paris, FR <img src="/assets/icons/arrow-right.svg"></a>
     </div>
 </div>
