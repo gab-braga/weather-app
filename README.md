@@ -15,7 +15,7 @@ e visualmente atraente para acompanhar as condições climáticas de qualquer lo
 * Weather API
 
  ## Como Usar
- 1. Clone o repositório: `git clone https://github.com/F-Gabriel-Braga/weather-app`
+ 1. Clone o repositório: `git clone https://github.com/gab-braga/weather-app`
  2. Acesse o diretório do projeto: `cd weather-app`
  3. Instale as dependências: `npm install`
  4. Inicie o aplicativo: `ng s -o`
@@ -29,4 +29,4 @@ Se você quiser contribuir para este projeto, siga estas etapas:
 5. Crie um pull request.
 
 ## Visualização
-![Captura de tela 2023-11-03 141701](https://github.com/F-Gabriel-Braga/weather-app/assets/66652642/db6310bf-ffed-4196-9fbb-5bf64043d110)
+![Captura de tela 2023-11-03 141701](https://github.com/gab-braga/weather-app/assets/66652642/db6310bf-ffed-4196-9fbb-5bf64043d110)
